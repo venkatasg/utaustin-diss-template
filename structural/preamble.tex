@@ -1,0 +1,125 @@
+\usepackage[authoryear, round]{natbib}
+\usepackage{styles/utformat}  		% Package style file for UT ETDs.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Optional packages used for this template. If you don't
+% need a capability in your document, feel free to comment out/remove
+% the package usage command.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{pdflscape}
+\usepackage{layout}
+\usepackage{graphicx}
+\usepackage{amsmath,amsthm,amsfonts,amscd}
+\usepackage{unicode-math}
+\usepackage{eucal} 	 
+\usepackage{verbatim}    
+\usepackage{styles/citesort}     
+\usepackage{algorithm}
+\usepackage{bibentry}
+\usepackage{algorithmic}
+\usepackage{xcolor}
+\usepackage{markdown}
+\usepackage{booktabs}
+\usepackage{xurl}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{tabularx}
+\usepackage{bbm}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks,
+    breaklinks,
+    linkcolor=black,
+    urlcolor=LinkBlue,
+    citecolor=LinkBlue,
+    filecolor=LinkBlue
+}
+
+
+% Typography
+\usepackage[sups,osf,otfmath]{XCharter} % default serif font
+\setmonofont[Path=/Users/venkat/Library/Fonts/, Extension=.otf, Ligatures=TeX, BoldFont=SourceCodePro-Bold, ItalicFont=SourceCodePro-BoldIt]{SourceCodePro-Regular}% typewriter font
+\setsansfont[Path=/Users/venkat/Library/Fonts/, Extension=.otf, Ligatures=TeX, BoldFont=SourceSans3-Bold, ItalicFont=SourceSans3-BoldIt]{SourceSans3-Regular}% sans serif font
+
+% Oldstyle tabular numbers inside tabular environment
+\AtBeginEnvironment{tabular}{\addfontfeatures{Numbers={Uppercase, Monospaced}}}
+\AtBeginEnvironment{tikzpicture}{\addfontfeatures{Numbers={Uppercase, Monospaced}}\small}
+\renewcommand{\theequation}{ {\addfontfeatures{Numbers={Uppercase, Monospaced}}\small\arabic{equation}}}
+
+% Custom Blue
+\definecolor{LinkBlue}{HTML}{0366D6}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Default is one-and-a-half spacing. Double is also permitted.%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\oneandonehalfspacing
+% \doublespacing
+
+% Strong widow and orphan control - avoid any widows and orphans
+\clubpenalty10000
+\widowpenalty10000
+
+% French Spacing - single spacing between sentences
+\frenchspacing
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Some math support.					     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	Theorem environments (these need the amsthm package)
+%
+% \theoremstyle{plain} %% This is the default
+
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\newtheorem{ax}{Axiom}
+
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[chapter]
+
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}[chapter]
+\newtheorem*{notation}{Notation}
+
+\numberwithin{equation}{section}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%	Macros.							     %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%	Here some macros that are needed in this document:
+
+
+\newcommand{\latexe}{{\LaTeX\kern.125em2%
+                      \lower.5ex\hbox{$\varepsilon$}}}
+
+\newcommand{\amslatex}{\AmS-\LaTeX{}}
+
+\chardef\bslash=`\\	% \bslash makes a backslash (in tt fonts)
+            %	p. 424, TeXbook
+
+\newcommand{\cn}[1]{\texttt{\bslash #1}}
+
+\makeatletter		% Starts section where @ is considered a letter
+            % and thus may be used in commands.
+\def\square{\RIfM@\bgroup\else$\bgroup\aftergroup$\fi
+  \vcenter{\hrule\hbox{\vrule\@height.6em\kern.6em\vrule}%
+                                              \hrule}\egroup}
+\makeatother		% Ends sections where @ is considered a letter.
+            % Now @ cannot be used in commands.
+
+\nobibliography*
+
+
+% These values determine the numbering within the text and Table of Contents.
+\setcounter{secnumdepth}{3}    % Number subsections in the chapters.
+\setcounter{tocdepth}{1} % include subsections in the Table of Contents
+
+% Captions
+\usepackage{caption}
+\captionsetup{format=plain, justification=centering}
