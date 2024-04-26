@@ -39,14 +39,14 @@
 
 
 % Typography
-\usepackage[sups,osf,otfmath]{XCharter} % default serif font
+\usepackage[sups,otfmath]{XCharter} % default serif font
 \setmonofont[Path=/Users/venkat/Library/Fonts/, Extension=.otf, Ligatures=TeX, BoldFont=SourceCodePro-Bold, ItalicFont=SourceCodePro-BoldIt, Scale=0.9]{SourceCodePro-Regular}% typewriter font
 \setsansfont[Path=/Users/venkat/Library/Fonts/, Extension=.otf, Ligatures=TeX, BoldFont=SourceSans3-Bold, ItalicFont=SourceSans3-BoldIt]{SourceSans3-Regular}% sans serif font
 
-% Oldstyle tabular numbers inside tabular environment
+% Tabular numbers inside tabular environment
 \AtBeginEnvironment{tabular}{\addfontfeatures{Numbers={Uppercase, Monospaced}}}
-\AtBeginEnvironment{tikzpicture}{\addfontfeatures{Numbers={Uppercase, Monospaced}}\small}
-\renewcommand{\theequation}{ {\addfontfeatures{Numbers={Uppercase, Monospaced}}\small\arabic{equation}}}
+\AtBeginEnvironment{tikzpicture}{\addfontfeatures{Numbers={Uppercase, Monospaced}}}
+\renewcommand{\theequation}{ {\addfontfeatures{Numbers={Uppercase, Monospaced}}\arabic{equation}}}
 
 % Custom Blue
 \definecolor{LinkBlue}{HTML}{0366D6}

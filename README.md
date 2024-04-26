@@ -1,12 +1,13 @@
-# Updated, beautiful UT Austin Dissertation/Treatise/Report LaTeX template.
+# Improved UT Austin Dissertation/Treatise/Report LaTeX template.
 
 The default dissertation template for UT Austin is good, but not pleasing to the eye. This is a bunch of changes that I've made to make the default template beautiful, that still follows the guidelines. I used this template to submit my Ph.D dissertation at UT Austin which was accepted with no errors or issues.
 
 List of changes:
 
-- Requires LuaTeX by default to enable custom font support and other features.
-- Bitstream Charter set as default font &emdash; you can [download it]() for free. If you want to use any other font, just change lines xxx--xxx in preamble.
+- Requires LuaLaTeX for compilation.
+- Bitstream Charter set as default font using the `XCharter` package. [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) and [Source Sans Pro](https://github.com/adobe-fonts/source-sans) are the default monospaced and typewriter fonts.
 - This template is available [on Overleaf]().
+- URLs and citations are highlighted in blue.
 
 Everything below this line is from the previous README by Evan Ott
 
