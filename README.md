@@ -8,6 +8,7 @@ List of changes:
 - Bitstream Charter set as default font using the `XCharter` package. [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) and [Source Sans Pro](https://github.com/adobe-fonts/source-sans) are the default monospaced and typewriter fonts.
 - This template is available [on Overleaf]().
 - URLs and citations are highlighted in blue.
+- Figure and Table captions are centered
 
 Everything below this line is from the previous README by Evan Ott
 
