@@ -6,7 +6,7 @@ List of changes:
 
 - Requires LuaLaTeX for compilation.
 - Bitstream Charter set as default font using the `XCharter` package. [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) and [Source Sans Pro](https://github.com/adobe-fonts/source-sans) are the default monospaced and typewriter fonts.
-- This template is available [on Overleaf]().
+- This template is available [on Overleaf](https://www.overleaf.com/latex/templates/improved-ut-austin-dissertation-template/nnytycpdspnz).
 - URLs and citations are highlighted in blue.
 - Figure and Table captions are centered
 
