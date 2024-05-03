@@ -22,13 +22,14 @@
 \usepackage{xcolor}
 \usepackage{markdown}
 \usepackage{booktabs}
-\usepackage{xurl}
+\usepackage{xurl}         % URLs can be hyphenated
 \usepackage{multirow}
 \usepackage{makecell}
 \usepackage{tabularx}
 \usepackage{bbm}
-\usepackage{hyperref}
-\hypersetup{
+\usepackage{hyperref}      
+\usepackage{linguex}       % Linguistics examples
+\hypersetup{               % Formatting links 
     colorlinks,
     breaklinks,
     linkcolor=black,
@@ -41,7 +42,8 @@
 % Typography
 \usepackage[sups,otfmath]{XCharter} % default serif font
 \setmonofont[Ligatures=TeX, BoldFont=SourceCodePro-Bold, ItalicFont=SourceCodePro-BoldIt, Scale=0.9]{SourceCodePro-Regular}% typewriter font
-\setsansfont[Ligatures=TeX, BoldFont=SourceSansPro-Bold, ItalicFont=SourceSansPro-BoldIt]{SourceSansPro-Regular}% sans serif font
+\setsansfont[Ligatures=TeX, BoldFont=SourceSansPro-Bold, BoldItalicFont=SourceSansPro-BoldIt]{SourceSansPro-Regular}% sans serif font
+\newfontfamily\ipafont{CharisSIL-Regular}[Extension=.ttf, BoldFont=CharisSIL-Bold, BoldItalicFont=CharisSIL-BoldItalic, ItalicFont=CharisSIL-Italic] %IPA font
 
 % Tabular numbers inside tabular environment
 \AtBeginEnvironment{tabular}{\addfontfeatures{Numbers={Uppercase, Monospaced}}}
@@ -123,3 +125,20 @@
 % Captions
 \usepackage{caption}
 \captionsetup{format=plain, justification=centering}
+
+% List and Linguex settings
+\renewcommand{\firstrefdash}{}
+
+% Spacing between subexamples
+\newlength{\SubItemSkip}
+\setlength{\SubItemSkip}{.5\baselineskip}
+\patchcmd{\a}{\itemsep\z@}{\itemsep\SubItemSkip}{}{}
+
+\AtBeginDocument{
+\setlength{\Exlabelsep}{1.5em}
+\setlength{\Extopsep}{.25\baselineskip}
+\setlength{\SubSubExleftmargin}{1.5em}
+\setlength{\SubExleftmargin}{1.5em}
+\setlength{\Exindent}{0pt}
+\setlength{\Exlabelwidth}{1em}
+}
