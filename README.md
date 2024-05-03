@@ -1,4 +1,4 @@
-# Improved UT Austin Dissertation/Treatise/Report LaTeX template.
+# Improved UT Austin Dissertation/Treatise/Thesis/Report LaTeX template.
 
 The default dissertation template for UT Austin is good, but not pleasing to the eye. This is a bunch of changes that I've made to make the default template beautiful, that still follows the guidelines. I used this template to submit my Ph.D dissertation at UT Austin which was accepted with no errors or issues.
 
