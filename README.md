@@ -4,8 +4,8 @@ The default dissertation template for UT Austin is good, but not pleasing to the
 
 List of changes:
 
-- Requires LuaLaTeX for compilation.
-- Bitstream Charter set as default font using the `XCharter` package. [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) and [Source Sans Pro](https://github.com/adobe-fonts/source-sans) are the default monospaced and typewriter fonts.
+- One `main.tex` file that can be used to generate dissertations, master's report/thesis, and treatises, with appropriate edits.
+- Requires LuaLaTeX for compilation due to OTF font usage. Bitstream Charter set as default font using the `XCharter` package. [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) and [Source Sans Pro](https://github.com/adobe-fonts/source-sans) are the default monospaced and typewriter fonts. [Charis SIL](https://software.sil.org/charis/download/) is loaded as an alternative font family for broad character coverage.
 - This template is available [on Overleaf](https://www.overleaf.com/latex/templates/improved-ut-austin-dissertation-template/nnytycpdspnz).
 - URLs and citations are highlighted in blue.
 - Figure and Table captions are centered
